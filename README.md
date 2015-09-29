@@ -18,7 +18,7 @@ You can either check the MaxMind db into your repo and use a database_path based
 Now just add:
 
 ```ruby
-before_filter :enforce_country_blocks
+prepend_before_filter :enforce_country_blocks
 ```
 
 to any controller whose actions you want to protect.  To protect your entire app, add it at the top of ApplicationController.
